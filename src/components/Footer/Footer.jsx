@@ -42,25 +42,27 @@ const Footer = () => {
           <source src={NatureVid} type="video/mp4" />
         </video>
         <div className="container">
-          <div className="grid md:grid-cols-3 py-5 bg-white/80 backdrop-blur-sm rounded-t-xl">
+          <div className="grid md:grid-cols-3 py-5 bg-gradient-to-bl from-rose-100 to-teal-100 backdrop-blur-sm rounded-t-xl">
             <div className="py-8 px-4">
               <h1 className="flex items-center gap-3 text-xl sm:text-3xl font-bold text-justify sm:text-left">
                 <img src={FooterLogo} alt="" className="max-h-[60px]" />
                 {/* TravelloGo */}
               </h1>
               <p className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                facere ab hic accusamus omnis dolor voluptatibus illo, tempore
-                eum tenetur.
+                Ready to explore the world your way? Let ExploreSphere guide you
+                to unforgettable destinations and curated adventures. Whether
+                it’s a dream vacation or a spontaneous getaway, we’re here to
+                make your travel seamless and stress-free. Start your journey
+                today—contact us and let’s plan your next great adventure!
               </p>
               <br />
               <div className="flex items-center gap-3 ">
                 <FaLocationArrow />
-                <p>TechTutors Tech Academy</p>
+                <p>CodeCraft Solutions</p>
               </div>
               <div className="flex items-center gap-3 mt-3">
                 <FaMobileAlt />
-                <p>+234 123456789</p>
+                <p>+(90) 54 8823 2196</p>
               </div>
               {/* social handles */}
               <div>
@@ -141,8 +143,8 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <div className="text-center py-5 border-t-2 border-gray-300/50 bg-primary text-white">
-              @copyright 2024 All rights reserved || Made @ TechTutors
+            <div className="text-center font-extrabold py-5 border-t-2 border-gray-300/50 bg-gradient-to-r from-indigo-400 to-cyan-400 ">
+              @copyright 2024 All rights reserved || CodeCraft Solutions
             </div>
           </div>
         </div>

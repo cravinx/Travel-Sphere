@@ -40,7 +40,7 @@ const OrderPopup = ({ orderPopup, setOrderPopup }) => {
                 className="w-full rounded-full border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4"
               />
               <div className="flex justify-center">
-                <button className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-1 px-4 rounded-full ">
+                <button className="bg-gradient-to-r from-orange-400 to-rose-400 hover:scale-105 duration-200 text-black font-bold py-1 px-4 rounded-full ">
                   Book Now
                 </button>
               </div>

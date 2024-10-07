@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Logo from "../../assets/logo.png";
 import { NavLink, Link } from "react-router-dom";
 import { FaCaretDown } from "react-icons/fa";
-//import ResponsiveMenu from "./ResponsiveMenu";
+import ResponsiveMenu from "./ResponsiveMenu";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 
 export const NavbarLinks = [
@@ -40,7 +40,7 @@ const DropdownLinks = [
 ];
 
 const Navbar = ({ handleOrderPopup }) => {
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(true);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -48,11 +48,11 @@ const Navbar = ({ handleOrderPopup }) => {
   return (
     <>
       <nav className="fixed top-0 right-0 w-full z-50 bg-white backdrop-blur-sm text-black shadow-md">
-        <div className="bg-gradient-to-r from-primary to-secondary text-white ">
+        <div className="bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-zinc-600 via-zinc-400 to-zinc-200">
           <div className="container py-[2px] sm:block hidden">
             <div className="flex items-center justify-between">
-              <p className="text-sm">20% off on next booking</p>
-              <p>mobile no. (+234)703 5365 907</p>
+              <p className="text-sm font-bold">20% off on next booking</p>
+              <p className="text-sm font-bold">mobile no. +(90) 54 8823 2196</p>
             </div>
           </div>
         </div>
@@ -115,7 +115,7 @@ const Navbar = ({ handleOrderPopup }) => {
             </div>
             <div className="flex items-center gap-4">
               <button
-                className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full"
+                className="bg-gradient-to-r from-orange-400 to-rose-400 hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-[.7s] text-black font-bold px-3 py-1 rounded-full"
                 onClick={() => {
                   handleOrderPopup();
                 }}
